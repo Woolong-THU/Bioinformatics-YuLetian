@@ -7,4 +7,3 @@
 - 联系我(yult24@mails.tsinghua.edu.cn)
 
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114017355963230&bvid=BV1cdwQe5EBU&cid=28432400426&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
