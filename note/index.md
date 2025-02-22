@@ -1,1 +1,1 @@
-[Lecture 1](/note/lecture1)
+[Lecture 1](/note/Lecture1)
