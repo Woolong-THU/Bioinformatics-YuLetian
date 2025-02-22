@@ -3,7 +3,7 @@
 - 20%课堂互动
 - 80%当堂/课后作业
 - 10%Pre一次
-- 加分题
+- 加分题期末
 
 ## Introduction-Part 1
 Question->Information->Analysis->Modeling
