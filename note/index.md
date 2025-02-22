@@ -1,2 +1,2 @@
-[Lecture 1](./lecture1.md)
+[Lecture 1](./lecture1)
 # 课程笔记
