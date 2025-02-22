@@ -1,6 +1,7 @@
+---
 layout: default
 title: Lecture1 笔记
-
+---
 # 生物信息学 Lecture 1
 ## 评分标准
 - 20%课堂互动
