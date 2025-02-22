@@ -1,2 +1,2 @@
-[Lecture 1](/note/lecture1)
+[Lecture 1](lecture1)
 # 课程笔记
