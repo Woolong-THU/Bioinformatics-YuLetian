@@ -1,4 +1,4 @@
-[首页](/index.md) | [笔记](/note/index.md)
+[首页](/index.md) | [笔记](/note/index.md) | [学习计划](/learning_plan.md)
 # 欢迎来到我的主页！
 
 - 我是 Yu Letian
