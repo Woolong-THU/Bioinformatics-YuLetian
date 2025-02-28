@@ -46,6 +46,16 @@ RNA World
 例子：AlphaFold
 软件：*3D Structurome*
 
+### Prediction Medicine for Human
+#### 对人群分析
+- Multi-omics and Multi-modal data
+- foudation model
+
+
+
+
+
+
 
 
 
