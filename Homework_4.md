@@ -31,5 +31,29 @@ awk '!/^@/ && ($2 && 0x4) == 0 {chr_count[$3]++} END {for (chr in chr_count) pri
 Soft clip 是指读段两端未比对到参考基因组的碱基，但仍保留在SEQ字段中。用“S”表示。”10S“表示前（后）10个碱基未比对到参考，取决于“10S”在CIGAR string开头（末尾）。
 ### (3.3)
 - Mapping Quality（MAPQ）是SAM/BAM文件中记录的一个重要指标，用于衡量测序read唯一且可靠地比对到参考基因组某个位置的置信度。其数值范围通常为0-60，以Phred质量评分形式表示（即MAPQ = -10log₁₀(p)，其中p为比对错误的概率）。
-- 
+- 可以表示比对的唯一性、可靠性。大于等于30可认为是唯一且准确的比对结果。
 ### (3.4)
+通过SAM/BAM文件中的 ​MD标签（MD:Z）和​CIGAR字符串可推断出read映射区域的参考基因组序列。
+- ​MD标签直接记录参考基因组的差异信息
+​- CIGAR字符串结合比对起始位置确定参考序列覆盖的区间
+- ​SEQ字段​（read序列）与MD标签结合，可重建参考序列
+## (4)
+- 直接下载bwa的.tar.gz文件
+- 解压
+```
+gunzip bwa-0.7.19.tar.gz
+tar -xvf bwa-0.7.19.tar
+```
+- 编译
+```
+make
+```
+- 建立index
+```
+ ./bwa index sacCer3.fa
+```
+- Mapping并输出为THA2-bwa.sam
+```
+./bwa mem sacCer3.fa THA2.fa > THA2-bwa.sam
+```
+## (5)Genome Browser
