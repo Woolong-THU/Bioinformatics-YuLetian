@@ -13,15 +13,33 @@ BWT在构建索引时通过分块排序减少内存占用。使用小型的rank�
 传统后缀数组需要存储所有后缀的指针（O(N log N)空间），而BWT通过LF映射动态计算后缀关系，仅需存储BWT字符串和辅助表，内存占用降低至O(N)。
 ## (2)
 ### 代码
-先mapping后统计排序<br>
+先mapping后统计<br>
 ```
 bowtie -v 2 -m 10 --best --strata BowtieIndex/YeastGenome -f THA2.fa -S THA2.sam
 
-awk '!/^@/ && ($2 && 0x4) == 0 {chr_count[$3]++} END {for (chr in chr_count) print chr, chr_count[chr]}' THA2.sam | sort -k2,2nr
+awk '!/^@/ && ($2 && 0x4) == 0 {chr_count[$3]++} END {for (chr in chr_count) print chr, chr_count[chr]}' THA2.sam
 ```
 ### 结果
 
-<img width="97" alt="截屏2025-03-25 13 27 18" src="https://github.com/user-attachments/assets/19c8bdbe-6c10-4780-b9a6-a3fddd608b61" />
+```
+chrIII 15
+chrI 18
+chrXIII 67
+chrXV 101
+chrV 33
+chrX 71
+chrXVI 78
+chrII 51
+chrVII 125
+chrIV 194
+chrIX 25
+chrXII 169
+chrVIII 68
+chrmt 12
+chrXIV 58
+chrVI 17
+chrXI 56
+```
 
 ## (3)
 ### (3.1)
@@ -57,3 +75,5 @@ make
 ./bwa mem sacCer3.fa THA2.fa > THA2-bwa.sam
 ```
 ## (5)Genome Browser
+<img width="1262" alt="截屏2025-03-29 10 57 55" src="https://github.com/user-attachments/assets/8e6780e5-03f2-4344-be3b-0d0e10304357" />
+<img width="1262" alt="截屏2025-03-29 10 56 10" src="https://github.com/user-attachments/assets/41e41342-8488-43c6-a86c-0bc84f498240" />
