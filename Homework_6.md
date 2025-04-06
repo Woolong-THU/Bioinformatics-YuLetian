@@ -42,6 +42,7 @@ bedtools merge -i exon.sorted.bed > exon.merged.bed
 bedtools sort -i gene.bed > gene.sorted.bed
 bedtools subtract -a gene.sorted.bed -b exon.merged.bed > intron.bed
 ```
+链接：https://github.com/Woolong-THU/Bioinformatics-YuLetian/blob/main/intron.bed
 6. 提取比对到intron区域的reads
 ```
 samtools view -b -L intron.bed COAD.ACTB.bam > intron_reads.bam
@@ -50,6 +51,6 @@ samtools view -b -L intron.bed COAD.ACTB.bam > intron_reads.bam
 ```
 samtools fastq intron_reads.bam > intron_reads.fastq
 ```
-
+链接：
 
 
