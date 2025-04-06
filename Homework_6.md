@@ -51,6 +51,21 @@ samtools view -b -L intron.bed COAD.ACTB.bam > intron_reads.bam
 ```
 samtools fastq intron_reads.bam > intron_reads.fastq
 ```
+链接：https://github.com/Woolong-THU/Bioinformatics-YuLetian/blob/main/intron_reads.fastq
+
+## (4)
+1. 提取ACTB基因区域的reads
+```
+samtools view -b -L gene.bed COAD.ACTB.bam > ACTB_region.bam
+```
+
+2. 计算覆盖度并生成bedgraph
+```
+bedtools genomecov -ibam ACTB_region.bam -bg -split > ACTB_coverage.bedgraph
+```
 链接：
+3. 使用IGV可视化得到
+
+
 
 
