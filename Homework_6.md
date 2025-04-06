@@ -63,7 +63,7 @@ samtools view -b -L gene.bed COAD.ACTB.bam > ACTB_region.bam
 ```
 bedtools genomecov -ibam ACTB_region.bam -bg -split > ACTB_coverage.bedgraph
 ```
-链接：
+链接：https://github.com/Woolong-THU/Bioinformatics-YuLetian/blob/main/ACTB_coverage.bedgraph
 
 3. 使用IGV可视化得到
 <img width="1368" alt="截屏2025-04-06 12 58 30" src="https://github.com/user-attachments/assets/56bfbfb1-d0a4-4686-a725-9ed93a3c6501" />
