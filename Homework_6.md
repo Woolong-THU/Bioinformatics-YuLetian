@@ -68,6 +68,36 @@ bedtools genomecov -ibam ACTB_region.bam -bg -split > ACTB_coverage.bedgraph
 3. 使用IGV可视化得到
 <img width="1368" alt="截屏2025-04-06 12 58 30" src="https://github.com/user-attachments/assets/56bfbfb1-d0a4-4686-a725-9ed93a3c6501" />
 
+## 简答题
+### 1. 人类基因组的大小以及基本组成是哪些?
+人类基因组大小为：3,099,750,718 bp （核基因组）<br>
+基本组成：
+<img width="1368" alt="image0" src="https://github.com/user-attachments/assets/fcb5061c-86b8-431a-b21d-281e2b4e0d3a" />
 
+| 组成类型               | 数量              |
+|------------------------|-------------------|
+| Coding genes           | 19,868            |
+| Non coding genes       | 42,160            |
+| Small non coding genes | 4,867             |
+| Long non coding genes  | 35,076            |
+| Misc non coding genes  | 2,217             |
+| Pseudogenes            | 15,206            |
+| Gene transcripts       | 387,944           |
+<br>
+<img width="1368" alt="image1" src="https://github.com/user-attachments/assets/ef710461-9067-4289-a128-794363acbf7a" />
+（数据来源：Ensembl GRCh38.p14 更新：Jul 2024）<br>
 
-
+### 2. 基因中的非编码 RNA的最新注释是多少个了?请详细列一下其中的非编码 RNA 的细分类型的数目，并对主要的非编码 RNA 是什么做的用1-2句解释一下。
+| region        | source        | # of genes | # of transcripts | annotation file         | sequence file          |
+|---------------|---------------|------------|------------------|-------------------------|------------------------|
+| refseq Release|               | 62         | 62               | refseq,rRNA.affp        | refseq,rRNA.fa.        |
+| mRNA          | gencode v38   | 19,955     | 162,022          | gencode.v38.mRNA.gff3.gz | gencode.v38.mRNA.fa.gz |
+| tRNA          | gencode v38   | 649        | 649              | NA.fgf3.gz              | nata.fz8.g             |
+| snRNA         | gencode v38   | 1,901      |                  | gencode.v38.cn          | gencode.v38.cn         |
+| snRNA         | gencode v38   | 1,901      |                  | RNA.gff3.gz             | RNA.fa.gz              |
+| snoRNA        | gencode v38   | 943        | 943              | gencode.v38.cn          | gencode.v38.cn         |
+| misc-srRNA    | gencode v38   | 680        | 680              | gencode.v38.sr          | gencode.v38.sr         |
+| misc-YRNA     | gencode v38   | 756        | 756              | gencode.v38_Y           | gencode.v38_Y          |
+| misc-other    | gencode v38   | 777        | 777              | notation.others.gff3.gz | genode.v38.at          |
+| RNAs²         |               |            |                  | gff3.gz                 | nthis.faz.g            |
+| pseudogene3   |               |            |                  |                         | genode.v38.ps          |
