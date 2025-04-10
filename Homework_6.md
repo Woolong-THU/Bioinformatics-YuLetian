@@ -91,11 +91,18 @@ bedtools genomecov -ibam ACTB_region.bam -bg -split > ACTB_coverage.bedgraph
 非编码RNA最新注释43499个。(Gencode v47,10.2024,GRCh38.p14)
 | region        | source        | # of genes | # of transcripts | annotation file         | 
 |---------------|---------------|------------|------------------|-------------------------|
-| rRNA| gencode v47| 47        | 47               | gencode.v47.annotation.gtf.gz   | 
+| rRNA| gencode v47| 47        | 47       | gencode.v47.annotation.gtf.gz   | 
 | tRNA     | gencode v38   | 649    | 649  | NA.fgf3.gz  | nata.fz8.g      |
-| snRNA    | gencode v47   | 1,901     | 1,901 |gencode.v47.annotation.gtf.gz  | 
-| snoRNA   | gencode v47   | 942 | 942| gencode.v47.annot2ation.gtf.gz    |
-| misc-srRNA    | gencode v47   | 680        | 680         | gencode.v38.sr   |
-| misc-YRNA     | gencode v47   | 756        | 756    | gencode.v38_Y    |
-| misc-other RNAs    | gencode v47   | 777        | 777 | notation.others.gff3.gz |
-| lncRNA   | gencode v47   | 34914        | 189177 | gencode.v47.annot2ation.gtf.gz |
+| snRNA    | gencode v47   | 1901     | 1901 |gencode.v47.annotation.gtf.gz  | 
+| snoRNA   | gencode v47   | 942 | 942| gencode.v47.annotation.gtf.gz    |
+| misc-srpRNA    | gencode v47   | 680        | 680         | gencode.v38.sr   |
+| misc-Y RNA     | gencode v47   | 756        | 756    | gencode.v38_Y    |
+| misc-other RNAs    | gencode v47   | 777 | 777 | notation.others.gff3.gz |
+| lncRNA   | gencode v47   | 34914 | 189177 | gencode.v47.annotation.gtf.gz |
+| miRNA   | gencode v47   | 1879 | 1879 | gencode.v47.annotation.gtf.gz |
+| scaRNA   | gencode v47   | 49 | 49 | gencode.v47.annotation.gtf.gz |
+| scRNA   | gencode v47   | 1 | 1 | gencode.v47.annotation.gtf.gz |
+| sRNA   | gencode v47   | 5 | 5 | gencode.v47.annotation.gtf.gz |
+| ribozyme   | gencode v47   | 8 | 8 | gencode.v47.annotation.gtf.gz |
+| piRNA   | piRbase v3 (2021)   | 77242 | 77242 | hsa.pirbase.gold.v3.0.fa.gz |
+| cicrRNA   | cicrbase   | 77242 | 77242 | hsa.pirbase.gold.v3.0.fa.gz |
