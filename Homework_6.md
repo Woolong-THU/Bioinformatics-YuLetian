@@ -88,16 +88,14 @@ bedtools genomecov -ibam ACTB_region.bam -bg -split > ACTB_coverage.bedgraph
 （数据来源：Ensembl GRCh38.p14 更新：Jul 2024）<br>
 
 ### 2. 基因中的非编码 RNA的最新注释是多少个了?请详细列一下其中的非编码 RNA 的细分类型的数目，并对主要的非编码 RNA 是什么做的用1-2句解释一下。
-| region        | source        | # of genes | # of transcripts | annotation file         | sequence file          |
-|---------------|---------------|------------|------------------|-------------------------|------------------------|
-| refseq Release|               | 62         | 62               | refseq,rRNA.affp        | refseq,rRNA.fa.        |
-| mRNA          | gencode v38   | 19,955     | 162,022          | gencode.v38.mRNA.gff3.gz | gencode.v38.mRNA.fa.gz |
-| tRNA          | gencode v38   | 649        | 649              | NA.fgf3.gz              | nata.fz8.g             |
-| snRNA         | gencode v38   | 1,901      |                  | gencode.v38.cn          | gencode.v38.cn         |
-| snRNA         | gencode v38   | 1,901      |                  | RNA.gff3.gz             | RNA.fa.gz              |
-| snoRNA        | gencode v38   | 943        | 943              | gencode.v38.cn          | gencode.v38.cn         |
-| misc-srRNA    | gencode v38   | 680        | 680              | gencode.v38.sr          | gencode.v38.sr         |
-| misc-YRNA     | gencode v38   | 756        | 756              | gencode.v38_Y           | gencode.v38_Y          |
-| misc-other    | gencode v38   | 777        | 777              | notation.others.gff3.gz | genode.v38.at          |
-| RNAs²         |               |            |                  | gff3.gz                 | nthis.faz.g            |
-| pseudogene3   |               |            |                  |                         | genode.v38.ps          |
+非编码RNA最新注释43499个。(Gencode v47,10.2024,GRCh38.p14)
+| region        | source        | # of genes | # of transcripts | annotation file         | 
+|---------------|---------------|------------|------------------|-------------------------|
+| rRNA| gencode v47| 47        | 47               | gencode.v47.annotation.gtf.gz   | 
+| tRNA     | gencode v38   | 649    | 649  | NA.fgf3.gz  | nata.fz8.g      |
+| snRNA    | gencode v47   | 1,901     | 1,901 |gencode.v47.annotation.gtf.gz  | 
+| snoRNA   | gencode v47   | 942 | 942| gencode.v47.annot2ation.gtf.gz    |
+| misc-srRNA    | gencode v47   | 680        | 680         | gencode.v38.sr   |
+| misc-YRNA     | gencode v47   | 756        | 756    | gencode.v38_Y    |
+| misc-other RNAs    | gencode v47   | 777        | 777 | notation.others.gff3.gz |
+| lncRNA   | gencode v47   | 34914        | 189177 | gencode.v47.annot2ation.gtf.gz |
