@@ -42,7 +42,7 @@ bedtools merge -i exon.sorted.bed > exon.merged.bed
 bedtools sort -i gene.bed > gene.sorted.bed
 bedtools subtract -a gene.sorted.bed -b exon.merged.bed > intron.bed
 ```
-链接：https://github.com/Woolong-THU/Bioinformatics-YuLetian/blob/main/intron.bed
+链接：https://github.com/Woolong-THU/Bioinformatics-YuLetian/blob/main/intron.bed<br>
 6. 提取比对到intron区域的reads
 ```
 samtools view -b -L intron.bed COAD.ACTB.bam > intron_reads.bam
@@ -104,3 +104,10 @@ bedtools genomecov -ibam ACTB_region.bam -bg -split > ACTB_coverage.bedgraph
 | ribozyme   | [gencode v47 ](https://www.gencodegenes.org/human/stats_47.html)  | 8 | 8 | gencode.v47.annotation.gtf.gz |
 | piRNA   | [piRbase v3](http://bigdata.ibp.ac.cn/piRBase/) (2021)   | 77242 | 77242 | hsa.pirbase.gold.v3.0.fa.gz |
 | cicrRNA   | [CIRCpedia v2](http://yang-laboratory.com/circpedia/)   | 183943 | 183943 |   |
+
+#### 几种RNA的功能
+1. **rRNA**：构成核糖体，直接参与蛋白质合成；  
+2. **tRNA**：转运特定氨基酸至核糖体用于合成蛋白质；  
+3. **snRNA**：协助mRNA剪接等加工过程；  
+4. **snoRNA**：指导rRNA等RNA的化学修饰；  
+5. **miRNA**：结合靶标mRNA抑制翻译或促使其降解。
