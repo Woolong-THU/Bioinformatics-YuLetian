@@ -179,3 +179,8 @@ pheatmap(
   main = "Z-score of log10 CPM (Grouped by Cancer Type)"
 )
 ```
+**结果**
+![RNAseq_heatmap2](https://github.com/user-attachments/assets/771ad546-5117-468b-951c-6e83afa457b5)
+
+**结论**
+COAD和READ更相似。
