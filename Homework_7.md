@@ -255,7 +255,18 @@ Multiple test correction: 当同时进行大量统计检验时，​假阳性（
 **DESeq2**<br>
 https://github.com/Woolong-THU/Bioinformatics-YuLetian/blob/main/mut.light.vs.dark.txt<br>
 **edgeR**<br>
+https://github.com/Woolong-THU/Bioinformatics-YuLetian/blob/main/edger.mut.light.vs.dark.txt<br>
 
+## (4)
+DESeq2差异基因总数: 95<br>
+edgeR差异基因总数: 58 <br>
+共有基因数: 46 <br>
+DESeq2特有基因: 49 <br>
+edgeR特有基因: 12<br>
 
+![Venn](https://github.com/user-attachments/assets/caa47afc-ed00-4088-ab0c-047a0613dc7f)
 
+## (5)
+
+![edgeRheatmap](https://github.com/user-attachments/assets/d46099d9-564d-4779-89ca-6399eb2aad7a)
 
