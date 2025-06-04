@@ -113,5 +113,5 @@ plot(rocObj,
 grid()
 ```
 
-![Rplot](https://github.com/user-attachments/assets/d421275d-9962-4b9e-a04b-f58d97f2c6ae)
-![Rplot PCA](https://github.com/user-attachments/assets/fb8e63b2-affb-4b46-9c10-7cd96f20abef)
+![PCA结果](https://github.com/user-attachments/assets/cf1e1815-3520-4c79-8474-ac9d9d02eaa0)
+![ROC曲线](https://github.com/user-attachments/assets/de7ac983-5ac2-43b2-9df7-bf47372fef27)
